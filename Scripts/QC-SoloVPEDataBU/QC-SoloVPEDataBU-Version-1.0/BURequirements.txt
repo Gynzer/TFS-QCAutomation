@@ -1,0 +1,15 @@
+	QC Script to copy SoloVPE equipment data.     Requirements as follows:
+		Databases
+			SVDatastore: C:\ProgramData\CTech\SecureVPE\SVDatastore.db
+				Note that the ProgramData folder is generally hidden and needs to be unhidden.
+			Solo3: C:\ProgramData\CTech\SoloVPE\Solo3.db 
+		DB Keys
+			SecureVPE DBKey: Open the Registry Editor application and then navigate to the following path 
+				HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\CTECH\SecureVPE
+			SoloVPE DBKey: 
+				HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\CTECH\SoloVPE
+	To be backed up to a Network NAS location.
+	Will be run via Scheduled Task under a service account dedicated to each specific system.
+	Parameters to be read from a parameter file: QC-SoloVPEDataBU.param
+	Scripts and parameter file to be stored in C:\QCAutomation\Scripts\QC-SoloVPEDataBU
+	Log Files to be written to C:\QCAutomation\Logs

@@ -1,0 +1,25 @@
+#######################################################################
+# Edit the QC-Solo-VPEDataBU.param file.   
+# There are only three fields to edit.
+# Please refer to QC-SoloVPEDataBU-Isntallation_Instructions.docx
+#######################################################################
+
+#[Example:   SystemName = SoloVPERoom1159]
+SystemName      = SoloVPERoom1159
+
+#[Example:  TargetNASURL = \\USSLO-QC-NAS01\EquipBackups
+TargetShare     =  \\USSLO-QC-NAS01\EquipBackups
+
+#[Example: TargetDirectory = QC\SoloVPE]
+TargetDirectory = QCTest\SoloVPE
+
+#######################################################################
+# DO NOT EDIT BELOW THIS LINE
+#######################################################################
+
+SVDataStore     = C:\ProgramData\CTech\SecureVPE\SVDatastore.db
+Solo3           = C:\ProgramData\CTech\SoloVPE\Solo3.db 
+SecureVPEDBKey  = HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\CTECH\SecureVPE
+SoloVPEDBKey    = HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\CTECH\SoloVPE
+LogFileDir      = C:\QCAutomation\Logs
+

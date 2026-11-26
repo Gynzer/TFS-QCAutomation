@@ -1,0 +1,1 @@
+This resoure is a collection of scripts written to support QC and QA operations.   Essentially, anything on site that does not work under MSEAutomation and part of MFG or PD.

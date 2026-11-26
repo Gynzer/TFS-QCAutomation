@@ -1,0 +1,42 @@
+#######################################################
+# Edit the QC-Solo-VPEDataBU.param file.   
+# There are only two fields to edit, please follow these directions.
+#
+#  SystemName  =     
+#    {This is a descriptive name that will be used in the naming for directories and files.    
+#     Recommended length 2 - 16 characters}
+#    [Example:   SystemName = SoloVPERoom1159]
+#  TargetShare  =
+#    {This is the URL of the target resource.    
+#     It will include the Server Name and the resource name.   
+#    NOTE: the \\ and \ characters are important.    Do not include a trailing \.
+#    [Example:  TargetShare = \\USSLO-QC-NAS01\EquipBackups]
+#  TargetDirectory = 
+#    {This will be the root directory name underwhich 
+#     Value to be added to the Share directory structure; 
+#     Do not include folder for this specific system; do not start with '\'   
+#     The script will create a directory below this that to store all of its backed up files.}
+#######################################################
+
+#    [Example:   SystemName = SoloVPERoom1159]
+
+SystemName      = SoloVPERoom1159
+
+#    [Example:  TargetNASURL = \\USSLO-QC-NAS01\EquipBackups
+
+TargetShare     =  \\USSLO-QC-NAS01\EquipBackups
+
+#    [Example: TargetDirectory = QC\SoloVPE]
+
+TargetDirectory = QCTest\SoloVPE
+
+#######################################################
+# DO NOT EDIT BELOW THIS LINE
+#######################################################
+
+SVDataStore     = C:\ProgramData\CTech\SecureVPE\SVDatastore.db
+Solo3           = C:\ProgramData\CTech\SoloVPE\Solo3.db 
+SecureVPEDBKey  = HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\CTECH\SecureVPE
+SoloVPEDBKey    = HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\CTECH\SoloVPE
+LogFileDir      = C:\QCAutomation\Logs
+
